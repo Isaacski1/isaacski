@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/logo.png.png" type="image/x-icon">
+
+
+    <link rel="stylesheet" href="./style/common.css" />
+    <link rel="stylesheet" href="./style/courses.css" />
+    <link rel="stylesheet" href="./style/navbar.css" />
+
+
+    <title>Isaacski University</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,400;0,600;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/d316b426a0.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section class="courses-main">
+      <nav>
+        <a href="index.html"
+          ><img src="images/logo.png.png" alt="School logo"
+        /></a>
+        
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul class="navbar__menu">
+            <li class="navbar__items">
+            <a href="/" class="navbar__links">Home</a>
+            </li>
+            <li class="navbar__items">
+              <a href="./courses.html" class="navbar__links">Courses</a>
+              </li>
+              <li class="navbar__items">
+                <a href="./admission.html" class="navbar__links">Admission</a>
+                </li>
+                  <li class="navbar__items">
+                    <a href="./congratulation.html" class="navbar__links">Congratulation</a>
+                    </li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <div class="contact-main-text">
+        <h1>Programs Offered At Isaacski University</h1>
+        <a href="#contact">Explore to our Courses</a>
+      </div>
+    </section>
+    <!-- ----- Facilities -------->
+    <section class="facilities">
+      <div class="row">
+        <div class="facilities-col">
+          <img src="images/software engineering.jpg">
+          <h3>Software Engineering</h3>
+        </div>
+        <div class="facilities-col">
+          <img src="images/human resources.jpg">
+          <h3>Human Resources</h3>
+        </div>
+        <div class="facilities-col">
+          <img src="images/business management.jpg">
+          <h3>Business Management</h3>
+        </div>
+        <div class="facilities-col">
+          <img src="images/cyber security.jpg">
+          <h3>Cyber Security</h3>
+        </div>
+      </div>
+    </section>
+
+
+
+    <div>
+      <h3>
+      <p>Made with <i class="fa fa-heart-o"></i> Easy Tutorial</p></h3>
+    </div>
+    <!--------JavaScript for Toggle Menu------->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>

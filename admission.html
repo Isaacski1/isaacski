@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/logo.png.png" type="image/x-icon">
+
+
+    <link rel="stylesheet" href="./style/common.css" />
+    <link rel="stylesheet" href="./style/admission.css" />
+    <link rel="stylesheet" href="./style/navbar.css" />
+
+
+    <title>Isaacski University</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,400;0,600;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/d316b426a0.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section class="admission-main">
+      <nav>
+        <a href="index.html"
+          ><img src="images/logo.png.png" alt="School logo"
+        /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul class="navbar__menu">
+            <li class="navbar__items">
+            <a href="/" class="navbar__links">Home</a>
+            </li>
+            <li class="navbar__items">
+              <a href="./courses.html" class="navbar__links">Courses</a>
+              </li>
+              <li class="navbar__items">
+                <a href="./admission.html" class="navbar__links">Admission</a>
+                </li>
+                  <li class="navbar__items">
+                    <a href="./congratulation.html" class="navbar__links">Congratulation</a>
+                    </li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+    </section>
+
+    <section>
+      <div class="text-box">
+        <h1>Admission Requirements</h1>
+        <h4>
+          <p>Dentify your academic background from the options below and review the admission requirements for your intended program of study using the Program Finder.<br>If you are interested in applying to the Medical Radiation Sciences, Nursing, or Physician Assistant programs,<br>visit Professional and Graduate Programs to find your admission requirements.  In addition to meeting general university admission requirements,<br>you may need to present specific subject prerequisites, or submit a personal profile or statement of interest.<br>
+
+            We make provisional offers of admission to qualified applicants from all educational backgrounds. If you are currently enrolled in secondary school or in a post-secondary program,<br>we will make a provisional admission decision based on your final results from last year and your midyear results in the current year.</p>
+        </h4>
+      </div>
+    </section>
+    <section class="cta">
+      <a href="./apply.html" class="hero-btn">Apply</a>
+      </section>
+      <div>
+        <h3>
+        <p>Made with <i class="fa fa-heart-o"></i> Easy Tutorial</p></h3>
+      </div>
+      <!--------JavaScript for Toggle Menu------->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
